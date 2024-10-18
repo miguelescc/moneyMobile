@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".categoryFolder.SubcategoryUpdateCategoryActivity">
+
+
+    <TextView
+        android:id="@+id/txtidcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Categories " />
+
+    <EditText
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:hint="Category"
+        android:enabled="false"
+        android:layout_below="@+id/texttitle" />
+    <EditText
+        android:id="@+id/budget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:hint="Budget"
+        android:enabled="false"
+        android:layout_below="@+id/category"
+        android:inputType="numberDecimal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/budget">
+
+        <Button
+            android:id="@+id/btnUpdateDisable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Category"
+            android:onClick="updateenable"
+            android:textSize="24dp"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/btnUpdateSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Category"
+            android:textSize="24dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Delete Existing Data"
+        android:layout_below="@+id/line1"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/btnDelete">
+        <TextView
+            android:id="@+id/txtSubcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Sub Category"/>
+        <Button
+            android:id="@+id/btnAddSubCat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="Add Sub Category"
+            android:onClick="AddSubcategory"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Main Menu"
+        android:onClick="Categories"
+        android:layout_below="@+id/line2"
+        />
+    <ListView
+        android:id="@+id/List"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/black"
+        android:dividerHeight="2dp"
+        android:layout_below="@+id/btnBack"/>
+
+</RelativeLayout>

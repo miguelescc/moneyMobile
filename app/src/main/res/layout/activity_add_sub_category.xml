@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".categoryFolder.AddSubCategoryActivity">
+
+
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add the new sub category"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/subcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:hint="Sub Category"
+        android:layout_below="@+id/texttitle" />
+    <Button
+        android:id="@+id/btnAddSubCat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Insert New Sub Category"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/subcategory"
+        />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Back to Categories"
+        android:onClick="Categories"
+        android:layout_below="@id/btnAddSubCat" />
+
+
+
+</RelativeLayout>

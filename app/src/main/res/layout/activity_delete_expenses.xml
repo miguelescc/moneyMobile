@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".deleteExpensesActivity"
+    android:background="@drawable/backgroundimg2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="menuMain"
+            android:text="Main Menu"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/texttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="List of Expenses Registered"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/lineList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <!--
+        <ListView
+            android:id="@+id/List2"
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:divider="@android:color/black"
+            android:dividerHeight="2dp" />-->
+
+            <ListView
+                android:id="@+id/List0"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:divider="@android:color/black"
+                android:dividerHeight="2dp" />
+            <!--
+                <ListView
+                    android:id="@+id/List1"
+                    android:layout_width="109dp"
+                    android:layout_height="match_parent"
+                    android:divider="@android:color/black"
+                    android:dividerHeight="2dp" />
+
+
+                <ListView
+                    android:id="@+id/List4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:divider="@android:color/black"
+                    android:dividerHeight="2dp">
+
+                </ListView>-->
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

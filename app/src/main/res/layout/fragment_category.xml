@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".categoryFolder.categoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/texttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories   "
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btnAddCat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnback"
+            android:layout_toRightOf="@id/texttitle"
+            android:onClick="Category"
+            android:text="ADD"
+            android:textSize="24dp" />
+
+        <ListView
+            android:id="@+id/ListCat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btnAddCat"
+            android:divider="@android:color/black"
+            android:dividerHeight="2dp" />
+    </LinearLayout>
+
+
+</FrameLayout>

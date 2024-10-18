@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".balanceActivity"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Mainn"
+        android:text="GO BACK TO MAIN MENU"
+        android:textSize="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true">
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <TableLayout
+                        android:id="@+id/tableBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:layout_centerHorizontal="true">
+
+                    </TableLayout>
+                </RelativeLayout>
+
+            </HorizontalScrollView>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

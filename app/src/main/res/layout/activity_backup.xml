@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".backupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="menuMain"
+            android:text="Main Menu"
+            android:textSize="24dp" />
+
+
+
+        <Button
+            android:id="@+id/btnBackup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="menuMain"
+            android:text="Create Backup"
+            android:textSize="24dp" />
+        <Button
+            android:id="@+id/btnRestore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="menuMain"
+            android:text="Restore"
+            android:textSize="24dp" />
+        <Button
+            android:id="@+id/btnExcel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="menuMain"
+            android:text="Create Excel"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

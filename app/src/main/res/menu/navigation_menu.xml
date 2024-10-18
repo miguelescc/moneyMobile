@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menuMain"
+        android:icon="@drawable/economyicon"
+        android:title="Main Menu"
+        />
+    <item android:id="@+id/menuCategory"
+        android:icon="@drawable/economyicon"
+        android:title="@string/category"
+        />
+    <item android:id="@+id/menuIncome"
+        android:icon="@drawable/economyicon"
+        android:title="Income"
+        />
+    <item android:id="@+id/menuExpense"
+        android:icon="@drawable/economyicon"
+        android:title="@string/menuexpense"
+        />
+    <item android:id="@+id/menuCalendar"
+        android:icon="@drawable/economyicon"
+        android:title="Calendar"
+        />
+    <item android:title="Others">
+
+        <menu>
+            <item
+                android:id="@+id/menuSettings"
+                android:icon="@drawable/economyicon"
+                android:title="Settings">
+            </item>
+            <item
+                android:id="@+id/menuStatistics"
+                android:icon="@drawable/economyicon"
+                android:title="Statistics">
+            </item>
+        </menu>
+
+    </item>
+</menu>

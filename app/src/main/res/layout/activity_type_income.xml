@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".incomeFolder.typeIncomeActivity">
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Mainn"
+        android:text="GO BACK TO MAIN MENU"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type of Incomes   "
+        android:textSize="24dp"
+        android:layout_below="@+id/btnback"
+        />
+
+    <Button
+        android:id="@+id/btnAddTypeIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/texttitle"
+        android:text="ADD"
+        android:onClick="addtypeActivity"
+        android:textSize="24dp"
+        android:layout_below="@+id/btnback"
+        />
+
+
+    <ListView
+        android:id="@+id/ListTypeIn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/black"
+        android:dividerHeight="2dp"
+        android:layout_below="@+id/btnAddTypeIncome"/>
+
+</RelativeLayout>

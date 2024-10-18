@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainFragment">
+
+    <ImageView
+        android:src="@drawable/backgroundimg2"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent"/>
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line0"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Lbl1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="Balance"
+                        android:textAllCaps="true"
+                        android:textSize="20sp"
+
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/LbBalance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Lbl1"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnExpense"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtBalance"
+                            android:text="Expenses"
+                            android:textSize="24dp" />
+
+                        <Button
+                            android:id="@+id/btnExpens"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtBalance"
+                            android:text="Add"
+                            android:textSize="24dp"
+                            android:onClick="openExpense"
+                            app:icon="@drawable/ic_add_circle_black_24dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="276dp"
+                    android:layout_below="@+id/btnExpense"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="Reload"
+                            android:text="Reload Page" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="See Budget"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/piechar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </com.github.mikephil.charting.charts.PieChart>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/List"
+                    android:layout_width="match_parent"
+                    android:layout_height="482dp"
+                    android:layout_below="@+id/piechar"
+                    android:divider="@android:color/black"
+                    android:background="@color/colorWhite"
+                    android:layout_margin="10dp"
+                    android:dividerHeight="2dp">
+
+                </ListView>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

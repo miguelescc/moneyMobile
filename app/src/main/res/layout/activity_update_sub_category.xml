@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".categoryFolder.UpdateSubCategoryActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Sub Category " />
+
+    <EditText
+        android:id="@+id/subcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:hint="Category"
+        android:layout_below="@+id/textView" />
+
+
+    <Button
+        android:id="@+id/btnUpdateSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update existing Sub Category"
+        android:textSize="24dp"
+        android:layout_below="@+id/subcategory"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Delete Sub Category"
+        android:layout_below="@+id/btnUpdateSave" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Back to Categories"
+        android:onClick="Categories"
+        android:layout_below="@+id/btnDelete"
+        />
+</RelativeLayout>

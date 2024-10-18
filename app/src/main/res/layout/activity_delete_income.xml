@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".deleteIncomeActivity"
+    android:background="@drawable/backgroundimg2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="menuMain"
+                android:text="Main Menu"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/texttitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Select an Income to Delete...."
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/List"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/black"
+                android:dividerHeight="2dp">
+
+            </ListView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

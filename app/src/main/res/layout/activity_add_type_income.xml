@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".incomeFolder.addTypeIncomeActivity">
+
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a New Type of Income"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/TypeIncomeTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:hint="Enter Type of Income"
+        android:layout_below="@+id/texttitle" />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/TypeIncomeTxt">
+
+        <Button
+            android:id="@+id/btnAddTypeIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insert New Type of Income"
+            android:onClick="insertType"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btnUpdateTypeIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Type of Income"
+            android:visibility="visible"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btnDeleteTypeIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Type of Income"
+            android:visibility="visible"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Back"
+        android:onClick="TypeIncome"
+        android:layout_below="@+id/line1"
+        />
+
+</RelativeLayout>

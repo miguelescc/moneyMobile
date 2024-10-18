@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".expenseFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:src="@drawable/backgroundimg2"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btnexpenseslist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expenses registered" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/line1"
+            android:layout_margin="10dp"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/texttitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnexpenseslist"
+                    android:text="Expense"
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/ExpensesTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texttitle"
+                    android:hint="Enter Expense"
+                    android:inputType="numberDecimal"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/textnote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ExpensesTxt"
+                    android:text="Enter a Note"
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/noteTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textnote"
+                    android:hint="Optional Note"
+                    android:textSize="24dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/noteTxt" />
+
+                <TextView
+                    android:id="@+id/txtNoSubCat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spinnerCategory"
+                    android:visibility="gone"
+                    android:textAlignment="center"
+                    android:text="This Category does not have any Sub Category" />
+
+                <Spinner
+                    android:id="@+id/spinnerSubCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spinnerCategory"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnputexpense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinnerSubCategory"
+                    android:text="Ingresar"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
